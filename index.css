@@ -6,7 +6,6 @@
 body { 
 	font-family: 'Lato', sans-serif;
 	max-width: 1440px;
-	height: 900px;
 	display: flex;
 	margin: 0px auto;
 }
@@ -136,6 +135,7 @@ line-height: 15px;
 color: #FFFFFF;
 cursor: pointer;
 margin-right: 30px;
+border: none;
 }
 
 .arrows{
@@ -196,6 +196,7 @@ a{
 .clock img, .fire img{
 	float: left;
 	padding-right: 5px;
+	padding-top: 2px;
 }
 
 .course-text{
@@ -230,6 +231,35 @@ input{
 #firstli{
 	padding-left: 35px;
 	padding-right: 20px;
+	position: relative;
+}
+#firstli .bell{
+	position: absolute;
+	left: 35px;
+	top: 9px;
+}
+
+#firstli .red{
+	position: absolute;
+	left: 50px;
+	z-index: 10;
+	top: 1px;
+}
+
+#firstli .one{
+	position: absolute;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 22px;
+	color: #FFFFFF;
+	left: 55px;
+	z-index: 100;
+	top: -2px;
+} 
+
+.profile{
+	padding-left: 30px;
 }
 
 .nav-top ul::after{
@@ -293,10 +323,6 @@ color: #000000;
 	justify-content: space-between;
 	padding-top: 17px;
 }
-.weekly-butt div{
-	padding-right: 10px;
-	line-height: 5px;
-}
 
 .weekly-butt{
 	cursor: pointer;
@@ -304,18 +330,14 @@ color: #000000;
 	border-radius: 8px;
 	width: 88px;
 	height: 32px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.weekly-butt p{
+	border: none;
+	outline: none;
 	font-style: normal;
-font-weight: bold;
-font-size: 13px;
-line-height: 15px;
-color: #000000;
-padding-left: 10px;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+	padding-left: 10px;
 }
 
 .flex-stats h4{

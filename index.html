@@ -128,8 +128,8 @@
  			<input type="text" name="search">
  		</div>
  		<ul>
- 			<li id="firstli"><a href="#"><img src="img/notif.svg" alt="notification"></a></li>
- 			<li><a href="#"><img src="img/profile.svg" alt="profile"></a></li>
+ 			<li id="firstli"><a href="#"><!--<img src="img/notif.svg" alt="notification">--><img src="img/bell.svg" alt="notification" class="bell"><img src="img/red.png" alt="notification" class="red"><span class="one">1</span></a></li>
+ 			<li class="profile"><a href="#"><img src="img/profile.svg" alt="profile"></a></li>
  		</ul>
  	</nav>
 
@@ -149,8 +149,13 @@
  		<div class="flex-stats">
  			<a href="#"><h4>Learning Hours</h4></a>
  			<a href="#"><h4 id="my-opac">My Courses</h4></a>
- 			<div class="weekly-butt"><p>Weekly</p>
- 				<div><a href="#"><img src="img/arrow-profile.svg" alt="option"></a></div>
+ 			<div><!--<p>Weekly</p>
+ 				<div><a href="#"><img src="img/arrow-profile.svg" alt="option"></a></div>-->
+				<select name="schedule" class="weekly-butt">
+					<option selected="selected">Weekly</option>
+					<option>Daily</option>
+				</select>
+		
  			</div>
  		</div>
  		<div class="graph"><img src="img/stats.svg" alt="graph"></div>
